@@ -1,14 +1,23 @@
 # Ignore all files
 *
 
-# Do not ignore the following file types
+# Preserve directory structure (CRUCIAL for subfolders)
+!*/
+
+# Allow specific file types in subfolders
 !*.ipynb
 !*.csv
 !*.pdf
+!*.md
+
+# Keep these essential files
 !.gitignore
 !README.md
 
-# Ignore specific files
+# Block PowerPoint files (all variations)
+*.pptx
+
+# System & cache files
 .DS_Store
 .ipynb_checkpoints/
 __pycache__/
